@@ -1,0 +1,75 @@
+// PERSONALIZED NAME
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('to') || "Tamu Undangan";
+
+document.addEventListener("DOMContentLoaded", () => {
+  if(document.getElementById("guestName")){
+    document.getElementById("guestName").innerText = name;
+  }
+  if(document.getElementById("guestName2")){
+    document.getElementById("guestName2").innerText = name;
+  }
+
+  loadMessages();
+  startCountdown();
+});
+
+// OPEN INVITE
+function openInvite(){
+  document.getElementById("music").play();
+  window.location.href = "event.html?to=" + name;
+}
+
+// MUSIC CONTROL
+function toggleMusic(){
+  let music = document.getElementById("music");
+  if(music.paused) music.play();
+  else music.pause();
+}
+
+// COUNTDOWN
+function startCountdown(){
+  const eventDate = new Date("July 20, 2026 10:00:00").getTime();
+
+  setInterval(() => {
+    let now = new Date().getTime();
+    let gap = eventDate - now;
+
+    let d = Math.floor(gap / (1000 * 60 * 60 * 24));
+    let h = Math.floor((gap / (1000 * 60 * 60)) % 24);
+    let m = Math.floor((gap / (1000 * 60)) % 60);
+
+    let el = document.getElementById("countdown");
+    if(el){
+      el.innerHTML = `${d} Hari ${h} Jam ${m} Menit`;
+    }
+  }, 1000);
+}
+
+// SAVE MESSAGE (LOCAL STORAGE)
+function saveMessage(e){
+  e.preventDefault();
+
+  let from = document.getElementById("from").value;
+  let msg = document.getElementById("message").value;
+
+  let data = JSON.parse(localStorage.getItem("messages")) || [];
+  data.push({from, msg});
+
+  localStorage.setItem("messages", JSON.stringify(data));
+  loadMessages();
+}
+
+// LOAD MESSAGE
+function loadMessages(){
+  let container = document.getElementById("messages");
+  if(!container) return;
+
+  let data = JSON.parse(localStorage.getItem("messages")) || [];
+
+  container.innerHTML = data.map(d => `
+    <div class="card p-2 mb-2">
+      <b>${d.from}</b><br>${d.msg}
+    </div>
+  `).join("");
+}

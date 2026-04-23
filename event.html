@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Graduation SMAK TM</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/LOGO SMAK TRIMULIA.png" rel="icon">
+  <link href="assets/img/LOGO SMAK TRIMULIA.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-Galery-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Graduation</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li onclick="openRSVP()">RSVP</li>
+          <li><a href="#graduate">Graduate</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#Galery">Galery</a></li>
+
+          <li><a href="#wish">Wishes</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!--pop up rsvp-->
+    <!-- RSVP MODAL -->
+    <div id="rsvpModal" class="modal hidden">
+      <div class="modal-content">
+
+        <span class="close" onclick="closeRSVP()">&times;</span>
+        <h2>RSVP</h2>
+
+        <p id="guestName">Nama: -</p>
+        <p id="guestQuota">Quota: -</p>
+
+        <select id="status">
+          <option value="hadir">Hadir</option>
+          <option value="tidak">Tidak Hadir</option>
+        </select>
+
+        <button onclick="submitRSVP()">Kirim</button>
+
+      </div>
+    </div>
+
+    <!-- graduate Section -->
+    <section id="graduate" class="graduate section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>🎓 Graduate</h2>
+        <p>
+          You are warmly invited by the graduate to celebrate this special milestone
+        </p>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 profile-img align-self-start">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 content">
+            <p style="margin-top:15px; text-align: center;">With great respect, we extend a warm welcome to the beloved
+              parents of the graduates listed below:</p>
+            <h1 class="title-calligraphy" id="guest-name">Loading...</h1>
+            <h4 class="title-class" id="guest-class"></h4>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /graduate Section -->
+
+    <!-- details Section -->
+    <section id="details" class="details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Event Details</h2>
+        <p>Here are the details for this memorable celebration</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 detail-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar-event-fill"></i></div>
+            <div>
+              <h4 class="title">Date</h4>
+              <p class="description">Friday, 5th June 2026</p>
+
+              <!-- Counter Section Begin -->
+              <div class="event-card">
+
+                <div class="event-header">
+                  <i class="bi bi-calendar-event"></i>
+                  <div>
+                    <h5>Please Mark Your Calendar For</h5>
+                    <p>Friday, 5th June 2026</p>
+                  </div>
+                </div>
+
+                <div class="countdown">
+                  <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hrs</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Min</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Sec</p>
+                  </div>
+                </div>
+
+                <a id="btn-calendar" href="#" class="btn-calendar">Save to Calendar</a>
+
+              </div>
+              <!-- Counter Section End -->
+
+            </div>
+          </div>
+          <!-- End date Item -->
+
+          <div class="col-lg-4 col-md-6 detail-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-pin-map-fill"></i> </div>
+            <div>
+              <h4 class="title">Venue</h4>
+              <p class="description">GII Setrasari Bandung</p>
+              <p>Setrasari Plaza, Jl. Prof. drg. Soeria Soemantri, Sukagalih, Kec. Sukajadi, Kota Bandung, Jawa Barat
+                40163</p>
+              <a href="https://maps.app.goo.gl/1B4h85NZJ57gWSJw6" target="_blank"
+                class="readmore stretched-link"><span>Get Directions</span><i class="bi bi-arrow-right"></i></a>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0786784517886!2d107.57890547453354!3d-6.881177893117731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6845aab9a93%3A0xbebf9528d797c8ed!2sGII%20Hok%20Im%20Tong%20%E2%80%A2%20Setrasari!5e0!3m2!1sen!2sid!4v1776746524016!5m2!1sen!2sid"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div><!-- End vanue Item -->
+
+          <div class="col-lg-4 col-md-6 detail-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-clipboard2-heart-fill"></i></i></div>
+            <div>
+              <h4 class="title">Dresscode</h4>
+              <p class="description">Formal Attire is required </p>
+              <ul class="dresscode-list">
+                <li>
+                  Ladies are kindly requested to wear <strong>Kebaya</strong>
+                </li>
+                <li>
+                  Gentlemen are requested to wear a <strong>Suit</strong>
+                </li>
+              </ul>
+              <a href="detail-details.html" class="readmore stretched-link"><span>Learn More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End vanue Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /details Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                    veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
+                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
+                    quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Galery Section -->
+    <section id="Galery" class="Galery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galery</h2>
+        <p>A glimpse of our cherished memories during our final year at SMAK Trimulia.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="Galery-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Galery Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-app">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/app-1.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>App 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/app-1.jpg" title="App 1" data-gallery="Galery-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-product">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/product-1.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/product-1.jpg" title="Product 1" data-gallery="Galery-gallery-product"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-branding">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/branding-1.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/branding-1.jpg" title="Branding 1" data-gallery="Galery-gallery-branding"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-books">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/books-1.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/books-1.jpg" title="Branding 1" data-gallery="Galery-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-app">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/app-2.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/app-2.jpg" title="App 2" data-gallery="Galery-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-product">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/product-2.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/product-2.jpg" title="Product 2" data-gallery="Galery-gallery-product"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-branding">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/branding-2.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/branding-2.jpg" title="Branding 2" data-gallery="Galery-gallery-branding"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-books">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/books-2.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/books-2.jpg" title="Branding 2" data-gallery="Galery-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-app">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/app-3.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/app-3.jpg" title="App 3" data-gallery="Galery-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-product">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/product-3.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/product-3.jpg" title="Product 3" data-gallery="Galery-gallery-product"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-branding">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/branding-3.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/branding-3.jpg" title="Branding 2" data-gallery="Galery-gallery-branding"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+            <div class="col-lg-4 col-md-6 Galery-item isotope-item filter-books">
+              <div class="Galery-content h-100">
+                <img src="assets/img/Galery/books-3.jpg" class="img-fluid" alt="">
+                <div class="Galery-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/Galery/books-3.jpg" title="Branding 3" data-gallery="Galery-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Galery-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Galery Item -->
+
+          </div><!-- End Galery Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Galery Section -->
+
+    <!-- wish Section -->
+    <section id="wish" class="wish section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Send Your Wishes & Messages</h2>
+        <p>Your kind words, blessings, and well wishes are sincerely appreciated</p>
+      </div><!-- End Section Title -->
+
+      <form id="wish-form">
+
+        <div class="row gy-3">
+
+          <div class="col-md-12">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="5" placeholder="Write your wishes..."
+              required></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <button type="submit">Send Wishes</button>
+          </div>
+
+        </div>
+
+      </form>
+
+      <!-- End wish Form -->
+
+      </div>
+
+      <!-- LIST PESAN -->
+      <div class="messages-section">
+        <h4 class="messages-title">Wishes</h4>
+        <div id="messages-container"></div>
+      </div>
+
+    </section><!-- /wish Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright">
+        <span>Copyright</span> <strong class="px-1 sitename">IT SMAK TM</strong> <span>All Rights Reserved</span>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+
+  <script src="assets/js/main.js"></script>
+
+  <!--Script coundown-->
+  <script>
+    const eventDate = new Date("June 5, 2026 09:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+      document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    }, 1000);
+  </script>
+
+  <!--Script save di google calendar-->
+  <script>
+    const btn = document.getElementById("btn-calendar");
+
+    const link = "https://www.google.com/calendar/render?action=TEMPLATE&text=Pelepasan%20Siswa%20SMAK%20TRIMULIA%202026&dates=20260605T020000Z/20260605T050000Z&details=Acara%20Pelepasan%20Siswa%20SMAK%20TRIMULIA%202026&location=Sekolah%20Tinggi%20Teologia%20Bandung";
+
+    btn.href = link;
+  </script>
+
+
+  <!--Firebase-->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDst71qlmGNZvkGKvT3HakqKIX5i8pIk5c",
+      authDomain: "tmundangan-95af0.firebaseapp.com",
+      projectId: "tmundangan-95af0",
+      storageBucket: "tmundangan-95af0.firebasestorage.app",
+      messagingSenderId: "955889421623",
+      appId: "1:955889421623:web:1eadc8fa0a1c4ae7289eb2",
+      measurementId: "G-20SQZV2QXF"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    window.db = db; // penting supaya bisa dipakai script lain
+  </script>
+
+  <!--script untuk simpan pesan list-->
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const form = document.getElementById("wish-form");
+    const list = document.getElementById("messages-container");
+
+    // 🚀 KIRIM DATA
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = form.name.value;
+      const message = form.message.value;
+
+      await addDoc(collection(db, "wishes"), {
+        name,
+        message,
+        time: new Date()
+      });
+
+      form.reset();
+    });
+
+
+    // 🚀 AMBIL & TAMPILKAN DATA (REALTIME)
+    onSnapshot(collection(db, "wishes"), (snapshot) => {
+      list.innerHTML = "";
+
+      snapshot.forEach((doc) => {
+        const data = doc.data();
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+          <div style="
+          background: #ffffff;
+          border-radius: 12px;
+          padding: 15px;
+          margin: 10px 0;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+          ">
+          <h5 style="margin:0; font-weight:600;">${data.name}</h5>
+          <p style="margin:6px 0 0; color:#555;">${data.message}</p>
+          </div>`;
+
+        list.appendChild(div);
+      });
+    });
+  </script>
+
+
+  <!-- nama di web-->
+  <!-- script firebase kamu -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const params = new URLSearchParams(window.location.search);
+    const guestId = params.get("id");
+
+    const nameEl = document.getElementById("guest-name");
+    const classEl = document.getElementById("guest-class");
+
+    // 🔥 FUNCTION TARUH DI SINI
+    async function loadGuest() {
+
+      if (!guestId) {
+        nameEl.innerText = "Tamu tidak ditemukan";
+        return;
+      }
+
+      try {
+        const guestRef = doc(db, "guest", guestId);
+        const guestSnap = await getDoc(guestRef);
+
+        if (!guestSnap.exists()) {
+          nameEl.innerText = "Undangan tidak ditemukan";
+          return;
+        }
+
+        const data = guestSnap.data();
+
+        nameEl.innerText = data.Name || data.name;
+        classEl.innerText = data.Kelas || data.class;
+
+      } catch (err) {
+        console.error(err);
+        nameEl.innerText = "Error ambil data";
+      }
+    }
+
+    // 🔥 PANGGIL DI SINI
+    loadGuest();
+
+  </script>
+
+  <!-- RSVP-->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore, doc, getDoc, setDoc, updateDoc }
+      from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+    let guestData = null;
+
+    /* ================= ID ================= */
+    function getId() {
+      return new URLSearchParams(window.location.search).get("id");
+    }
+
+    /* ================= OPEN MODAL ================= */
+    window.openRSVP = async function () {
+      const modal = document.getElementById("rsvpModal");
+      const id = getId();
+      if (!id) return alert("ID tidak ditemukan");
+
+      const guestRef = doc(db, "guest", id);
+      const rsvpRef = doc(db, "rsvp", id);
+
+      const rsvpSnap = await getDoc(rsvpRef);
+
+
+
+      const guestSnap = await getDoc(guestRef);
+
+      if (!guestSnap.exists()) {
+        alert("Data tidak ditemukan");
+        closeRSVP();
+        return;
+      }
+
+      if (rsvpSnap.exists()) {
+        alert("Sudah RSVP sebelumnya");
+        closeRSVP();
+        return;
+      }
+      else {
+
+        modal.classList.remove("hidden");
+
+        const data = guestSnap.data();
+        guestData = data;
+
+        document.getElementById("guestName").innerText =
+          "Nama: " + data.Name;
+
+        document.getElementById("guestQuota").innerText =
+          "Quota: " + data.quota;
+      };
+    }
+
+    /* ================= CLOSE ================= */
+    window.closeRSVP = function () {
+      document.getElementById("rsvpModal").classList.add("hidden");
+    };
+
+    /* ================= SUBMIT ================= */
+    window.submitRSVP = async function () {
+      const id = getId();
+      const status = document.getElementById("status").value;
+
+      const guestRef = doc(db, "guest", id);
+      const rsvpRef = doc(db, "rsvp", id);
+
+      const rsvpSnap = await getDoc(rsvpRef);
+
+      if (rsvpSnap.exists()) {
+        return alert("Sudah RSVP!");
+      }
+
+      await setDoc(rsvpRef, {
+        name: guestData.Name,
+        status: status,
+        timestamp: Date.now()
+      });
+
+      alert("RSVP berhasil!");
+      closeRSVP();
+    };
+
+  </script>
+</body>
+
+</html>
