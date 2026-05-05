@@ -101,7 +101,7 @@ h6 {
 
 .title-calligraphy {
   font-family: 'Bonheur Royale', cursive;
-  font-size: clamp(45px, 10vw, 90px);
+  font-size: clamp(32px, 8vw, 76px);
   font-weight: 400;
   text-align: center;
   color: #2c2c2c;
