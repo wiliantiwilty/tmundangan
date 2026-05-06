@@ -1023,6 +1023,19 @@ select {
   background-size: 14px;
 }
 
+.btn-rsvp {
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+  border: 1px solid #D4AF37;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.btn-rsvp:hover {
+  background-color: #D4AF37;
+  color: #0B1F3A;
+}
 /* BUTTON */
 button {
   width: 100%;
