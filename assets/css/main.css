@@ -19,15 +19,15 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff;
+  --background-color: #F8F9FB;
   /* Background color for the entire website, including individual sections */
-  --default-color: #898989;
+  --default-color: #0B1F3A;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #777777;
+  --heading-color:  #0B1F3A;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #b8a07e;
+  --accent-color: #D4AF37;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff;
+  --surface-color: #F8F9FB;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -37,15 +37,15 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.6);
   /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff;
+  --nav-hover-color: #F8F9FB;
   /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff;
+  --nav-mobile-background-color: #F8F9FB;
   /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-background-color: #F8F9FB;
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #898989;
+  --nav-dropdown-color:  #0B1F3A;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #b8a07e;
+  --nav-dropdown-hover-color:  #F8F9FB;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -53,15 +53,15 @@
 
 .light-background {
   --background-color: #f3f1f0;
-  --surface-color: #ffffff;
+  --surface-color: #F8F9FB;
 }
 
 .dark-background {
   --background-color: #858484;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --default-color: #F8F9FB;
+  --heading-color: #F8F9FB;
   --surface-color: #9e9e9e;
-  --contrast-color: #ffffff;
+  --contrast-color: #F8F9FB;
 }
 
 /* Smooth scroll */
@@ -104,7 +104,7 @@ h6 {
   font-size: clamp(60px, 12vw, 120px);
   font-weight: 400;
   text-align: center;
-  color: #2c2c2c;
+  color: #D4AF37;
   letter-spacing: 1px;
   padding-top:5%;
 }
@@ -114,7 +114,7 @@ h6 {
   font-size: clamp(32px, 6vw, 64px);
   font-weight: 600;
   text-align: left;
-  color: #ffff;
+  color: #F8F9FB;
   letter-spacing: 1px;
   padding-top:5%;
 }
@@ -124,7 +124,7 @@ h6 {
   font-size: clamp(32px, 6vw, 64px);
   font-weight: 600;
   text-align: left;
-  color: #ffff;
+  color: #F8F9FB;
   letter-spacing: 1px;
   padding-top:5%;
 }
@@ -134,7 +134,7 @@ h6 {
   font-size: clamp(32px, 6vw, 64px);
   font-weight: 600;
   text-align: center;
-  color: #ffff;
+  color: #F8F9FB;
   letter-spacing: 1px;
   padding-top:5%;
 }
@@ -148,8 +148,8 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
-  color: #ffffff;
+  background: #0B1F3A;
+  color: #F8F9FB;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -158,8 +158,8 @@ h6 {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
-  background: #059652;
+  color: #F8F9FB;
+  background: #0B1F3A;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -201,8 +201,8 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: rgba(0, 0, 0, 0);
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --default-color: #F8F9FB;
+  --heading-color: #F8F9FB;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 10px 0;
