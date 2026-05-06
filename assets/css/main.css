@@ -1043,7 +1043,7 @@ button {
   margin-top: 12px;
   border-radius: 10px;
   border: none;
-  background: #111;
+  background: #0B1F3A;
   color: white;
   font-size: 14px;
   cursor: pointer;
@@ -1051,7 +1051,7 @@ button {
 }
 
 button:hover {
-  background: #333;
+  background: #D4AF37;
 }
 
 .hidden{
