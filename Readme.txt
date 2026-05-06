@@ -1,6 +1,6 @@
-Thanks for downloading this template!
 
-Template Name: Folio
-Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+palet warna
+
+Navy (deep elegan) → #0B1F3A
+Gold (luxury klasik) → #D4AF37
+Soft White (clean & mahal look) → #F8F9FB
