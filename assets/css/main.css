@@ -1862,3 +1862,83 @@ button:hover {
 .starter-section {
   /* Add your styles here */
 }
+
+
+/* =========================
+   GOLD BOKEH ORNAMENT
+========================= */
+
+.gold-bokeh{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* glow kanan atas */
+.gold-bokeh::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  top:-200px;
+  right:-150px;
+
+  background:
+    radial-gradient(circle,
+      rgba(255,220,120,0.35) 0%,
+      rgba(255,220,120,0.12) 30%,
+      transparent 70%);
+
+  filter: blur(10px);
+}
+
+/* particles */
+.gold-bokeh::after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:
+    radial-gradient(circle, rgba(255,215,120,.9) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,230,180,.7) 0 6px, transparent 7px),
+    radial-gradient(circle, rgba(255,215,120,.5) 0 14px, transparent 15px),
+    radial-gradient(circle, rgba(255,255,255,.6) 0 1px, transparent 2px);
+
+  background-size:
+    120px 120px,
+    260px 260px,
+    420px 420px,
+    180px 180px;
+
+  background-position:
+    10% 20%,
+    85% 10%,
+    75% 80%,
+    40% 60%;
+
+  opacity: .8;
+  filter: blur(1px);
+
+  animation: sparkleFloat 12s ease-in-out infinite alternate;
+}
+
+/* supaya content di atas ornament */
+main,
+header,
+footer,
+.modal{
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes sparkleFloat{
+  from{
+    transform: translateY(0px);
+  }
+
+  to{
+    transform: translateY(-20px);
+  }
+}
