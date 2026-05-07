@@ -1868,30 +1868,45 @@ button:hover {
    GOLD BOKEH ORNAMENT
 ========================= */
 
+body{
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* layer utama */
 .gold-bokeh{
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: 9999;
   overflow: hidden;
+
+  transform: translateZ(0);
+  will-change: transform;
 }
 
-/* glow kanan atas */
+/* glow besar kanan atas */
 .gold-bokeh::before{
   content:"";
   position:absolute;
+
   width:700px;
   height:700px;
-  top:-200px;
-  right:-150px;
+
+  top:-220px;
+  right:-180px;
+
+  border-radius:50%;
 
   background:
     radial-gradient(circle,
-      rgba(255,220,120,0.35) 0%,
-      rgba(255,220,120,0.12) 30%,
+      rgba(255,220,120,0.38) 0%,
+      rgba(255,220,120,0.15) 30%,
       transparent 70%);
 
-  filter: blur(10px);
+  filter: blur(30px);
+
+  animation: glowFloat 8s ease-in-out infinite alternate;
 }
 
 /* particles */
@@ -1901,10 +1916,10 @@ button:hover {
   inset:0;
 
   background-image:
-    radial-gradient(circle, rgba(255,215,120,.9) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,215,120,.95) 0 2px, transparent 3px),
     radial-gradient(circle, rgba(255,230,180,.7) 0 6px, transparent 7px),
-    radial-gradient(circle, rgba(255,215,120,.5) 0 14px, transparent 15px),
-    radial-gradient(circle, rgba(255,255,255,.6) 0 1px, transparent 2px);
+    radial-gradient(circle, rgba(255,215,120,.45) 0 14px, transparent 15px),
+    radial-gradient(circle, rgba(255,255,255,.7) 0 1px, transparent 2px);
 
   background-size:
     120px 120px,
@@ -1918,27 +1933,44 @@ button:hover {
     75% 80%,
     40% 60%;
 
-  opacity: .8;
+  opacity: .75;
+
   filter: blur(1px);
 
-  animation: sparkleFloat 12s ease-in-out infinite alternate;
+  animation: sparkleMove 14s ease-in-out infinite alternate;
 }
 
-/* supaya content di atas ornament */
+/* semua content di bawah ornament */
 main,
 header,
-footer,
-.modal{
+footer{
   position: relative;
   z-index: 2;
 }
 
-@keyframes sparkleFloat{
+/* biar transparan */
+section{
+  background: transparent !important;
+}
+
+/* animasi glow */
+@keyframes glowFloat{
   from{
     transform: translateY(0px);
   }
 
   to{
-    transform: translateY(-20px);
+    transform: translateY(25px);
+  }
+}
+
+/* animasi particles */
+@keyframes sparkleMove{
+  from{
+    transform: translateY(0px) translateX(0px);
+  }
+
+  to{
+    transform: translateY(-30px) translateX(-10px);
   }
 }
