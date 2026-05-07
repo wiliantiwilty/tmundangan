@@ -141,7 +141,7 @@ h6 {
 
 .title-class{
   text-align: center;
-  font-size: clamp(20px, 3vw, 36px);
+  font-size: clamp(10px, 2vw, 26px);
 }
 
 
