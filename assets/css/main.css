@@ -1033,8 +1033,8 @@ button:hover {
 # graduate Section
 --------------------------------------------------------------*/
 .graduate .profile-img {
-  border: 20px solid var(--accent-color);
-  width: clamp(70vw, 40vw, 800px);
+  border: 10px solid var(--accent-color);
+  
   padding: 0;
 }
 
