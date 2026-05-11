@@ -1046,8 +1046,8 @@ button:hover {
   z-index: 1;
   width: clamp(70vw, 40vw, 800px);
   aspect-ratio: 3/4;
-  object-fit: contain;
-  height: 70%;
+  object-fit: cover;
+
 }
 
 .graduate .content h3 {
