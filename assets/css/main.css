@@ -1034,6 +1034,7 @@ button:hover {
 --------------------------------------------------------------*/
 .graduate .profile-img {
   border: 20px solid var(--accent-color);
+  width: clamp(70vw, 40vw, 800px);
   padding: 0;
 }
 
@@ -1043,7 +1044,7 @@ button:hover {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
-  width: clamp(200px, 40vw, 500px);
+  width: clamp(70vw, 40vw, 800px);
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 10px;
