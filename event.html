@@ -105,7 +105,7 @@
 
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 profile-img align-self-start">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img id = "guest-foto" src="assets/img/profile-img.jpg" class="img-fluid" alt="foto siswa">
           </div>
           <div class="col-lg-7 content">
             <p style="margin-top:15px; text-align: center;">With great respect, we extend a warm welcome to the beloved
@@ -605,7 +605,8 @@
 
     const nameEl = document.getElementById("guest-name");
     const classEl = document.getElementById("guest-class");
-
+    const fotoEl = document.getElementById("guest-foto");
+    
     // 🔥 FUNCTION TARUH DI SINI
     async function loadGuest() {
 
@@ -627,6 +628,7 @@
 
         nameEl.innerText = data.Name || data.name;
         classEl.innerText = data.Kelas || data.class;
+        fotoEl.src = data.Foto || data.foto;
 
       } catch (err) {
         console.error(err);
