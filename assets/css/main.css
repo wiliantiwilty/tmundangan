@@ -1047,6 +1047,7 @@ button:hover {
   width: clamp(70vw, 40vw, 800px);
   aspect-ratio: 3/4;
   object-fit: contain;
+  height: 70%;
 }
 
 .graduate .content h3 {
