@@ -1043,6 +1043,10 @@ button:hover {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  width: clamp(120px, 40vw, 300px);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .graduate .content h3 {
