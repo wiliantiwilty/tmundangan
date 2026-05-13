@@ -190,6 +190,16 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
+  .rsvp-menu {
+    font-weight: 700;
+  }
+
+  .navmenu-header {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
   .navmenu {
     padding: 0;
   }
@@ -395,6 +405,13 @@ h6 {
     background-color: rgba(33, 37, 41, 0.03);
   }
 
+  .navmenu-header {
+    color: black !important; 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
   .mobile-nav-active {
     overflow: hidden;
   }
@@ -425,6 +442,13 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+.close-btn {
+  text-align: right;
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 27px;
+}
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);

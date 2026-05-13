@@ -53,11 +53,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li onclick="openRSVP()">RSVP</li>
-          <li><a href="#graduate">Graduate</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#Galery">Galery</a></li>
-          <li><a href="#wish">Wishes</a></li>
+          <li onclick="openRSVP()" class="navmenu-header rsvp-menu">RSVP</li>
+          <li><a href="#graduate" class="navmenu-header">Graduate</a></li>
+          <li><a href="#details" class="navmenu-header">Details</a></li>
+          <li><a href="#Galery" class="navmenu-header">Galery</a></li>
+          <li><a href="#wish" class="navmenu-header">Wishes</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -72,7 +72,7 @@
     <div id="rsvpModal" class="modal hidden">
       <div class="modal-content">
 
-        <span class="close" onclick="closeRSVP()">&times;</span>
+        <span class="close close-btn" onclick="closeRSVP()">&times;</span>
         <h2>RSVP</h2>
 
         <p id="guestName">Nama: -</p>
@@ -450,7 +450,7 @@
       </div>
 
       <!-- LIST PESAN -->
-      <div class="messages-section">
+      <div class="messages-section" style="padding: 25px">
         <h4 class="messages-title">Wishes</h4>
         <div id="messages-container"></div>
       </div>
