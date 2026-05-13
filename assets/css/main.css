@@ -1907,3 +1907,374 @@ section{
     transform: translateY(-30px) translateX(-10px);
   }
 }
+
+
+/* =========================================================
+   LUXURY BLUE GOLD THEME
+========================================================= */
+
+body.luxury-theme {
+  background: #081120;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* BACKGROUND */
+.luxury-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(212,175,55,0.15),
+      transparent 30%),
+
+    radial-gradient(circle at bottom right,
+      rgba(212,175,55,0.08),
+      transparent 25%),
+
+    linear-gradient(
+      135deg,
+      #050816 0%,
+      #081120 30%,
+      #0B1730 60%,
+      #050816 100%
+    );
+}
+
+/* SOFT OVERLAY */
+.luxury-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+
+  background:
+    radial-gradient(circle at center,
+      transparent 0%,
+      rgba(0,0,0,0.35) 100%);
+}
+
+/* GLOBAL SECTION */
+.section {
+  background: transparent !important;
+  position: relative;
+}
+
+/* SECTION CARD EFFECT */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 28px;
+
+  border: 1px solid rgba(212,175,55,0.18);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.01)
+    );
+
+  backdrop-filter: blur(2px);
+
+  z-index: 0;
+}
+
+.section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* GOLD DOTS */
+.section::after {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  border-radius: 24px;
+
+  background-image:
+    radial-gradient(
+      rgba(212,175,55,0.18) 1px,
+      transparent 1px
+    );
+
+  background-size: 16px 16px;
+
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* HEADER */
+.header {
+  background: rgba(5, 10, 25, 0.55) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212,175,55,0.15);
+}
+
+/* LOGO */
+.sitename {
+  color: #D4AF37 !important;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* NAV */
+.navmenu a,
+.navmenu-header {
+  color: rgba(255,255,255,0.75) !important;
+  transition: 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu-header:hover {
+  color: #D4AF37 !important;
+}
+
+/* TITLE */
+.section-title h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  color: #D4AF37;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-title p {
+  color: rgba(255,255,255,0.75);
+  font-size: 16px;
+}
+
+/* CALLIGRAPHY */
+.title-calligraphy {
+  color: #F5D77A !important;
+
+  text-shadow:
+    0 0 10px rgba(212,175,55,0.35),
+    0 0 30px rgba(212,175,55,0.2);
+}
+
+/* TEXT */
+p,
+li,
+.description,
+.message-text {
+  color: rgba(255,255,255,0.78) !important;
+}
+
+/* PROFILE */
+.profile-img {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(212,175,55,0.4) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.01)
+    );
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.4),
+    0 0 30px rgba(212,175,55,0.08);
+}
+
+.profile-img img {
+  margin: 0 !important;
+  width: 100% !important;
+  border-radius: 24px;
+}
+
+/* EVENT CARD */
+.event-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16,24,45,0.95),
+      rgba(8,15,30,0.95)
+    ) !important;
+
+  border: 1px solid rgba(212,175,55,0.22);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.45);
+
+  backdrop-filter: blur(10px);
+}
+
+/* COUNTDOWN */
+.time-box span {
+  color: #F5D77A !important;
+  font-size: 34px;
+}
+
+.time-box p {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+/* ICON */
+.icon i {
+  color: #D4AF37 !important;
+}
+
+/* BUTTON */
+.btn-event,
+.btn-calendar,
+.btn-rsvp,
+#wish-form button,
+button {
+  background:
+    linear-gradient(
+      145deg,
+      #D4AF37,
+      #B9932F
+    ) !important;
+
+  color: #081120 !important;
+  border: none !important;
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 10px 25px rgba(212,175,55,0.25);
+
+  transition: 0.35s ease;
+}
+
+.btn-event:hover,
+.btn-calendar:hover,
+.btn-rsvp:hover,
+#wish-form button:hover,
+button:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(212,175,55,0.35);
+}
+
+/* FORM */
+#wish-form .form-control,
+.modal-content,
+select {
+  background: rgba(255,255,255,0.06) !important;
+
+  border: 1px solid rgba(212,175,55,0.15) !important;
+
+  color: #fff !important;
+
+  backdrop-filter: blur(10px);
+}
+
+#wish-form .form-control::placeholder,
+textarea::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+/* MODAL */
+.modal-content {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(9,17,35,0.98),
+      rgba(5,10,20,0.98)
+    ) !important;
+
+  border-radius: 28px;
+}
+
+/* GALLERY */
+.Galery-content {
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid rgba(212,175,55,0.18);
+
+  background: rgba(255,255,255,0.02);
+}
+
+.Galery-content img {
+  transition: 0.5s ease;
+}
+
+.Galery-content:hover img {
+  transform: scale(1.06);
+}
+
+/* WISH CARD */
+.message-card,
+#messages-container > div > div {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13,20,40,0.95),
+      rgba(8,12,25,0.95)
+    ) !important;
+
+  border: 1px solid rgba(212,175,55,0.15);
+
+  border-radius: 22px !important;
+
+  color: white !important;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+.footer {
+  background: transparent !important;
+  border-top: 1px solid rgba(212,175,55,0.1);
+}
+
+.footer span,
+.footer strong {
+  color: rgba(255,255,255,0.65);
+}
+
+/* SCROLL TOP */
+.scroll-top {
+  background: #D4AF37 !important;
+  color: #081120 !important;
+  border-radius: 50%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .section::before {
+    inset: 12px;
+    border-radius: 24px;
+  }
+
+  .section::after {
+    inset: 24px;
+  }
+
+  .title-calligraphy {
+    font-size: 64px;
+  }
+
+  .event-card {
+    max-width: 100%;
+  }
+
+  .profile-img {
+    margin-bottom: 30px;
+  }
+
+  .navmenu ul {
+    background:
+      linear-gradient(
+        145deg,
+        rgba(10,18,35,0.98),
+        rgba(5,10,20,0.98)
+      ) !important;
+  }
+}
