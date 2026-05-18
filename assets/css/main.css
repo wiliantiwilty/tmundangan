@@ -2291,8 +2291,11 @@ textarea::placeholder {
   .title{
      color: #F8F9FB;
   }
+  
  .graduate-info{
  width: 90%;
+ text-align: center;
+   padding : 5%;
  margin: 5%;
  }
   
