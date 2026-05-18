@@ -1147,6 +1147,7 @@ button:hover {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .details .detail-item .readmore {
