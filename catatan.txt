@@ -1,1 +1,42 @@
 
+    <!-- wish Section -->
+    <section id="wish" class="wish section" style="display: none;">
+
+      <!-- Section Title -->
+      <div class="container detailsbox section-title" data-aos="fade-up">
+        <h2>Send Your Wishes & Messages</h2>
+        <p>Your kind words, blessings, and well wishes are sincerely appreciated</p>
+      </div><!-- End Section Title -->
+
+      <form id="wish-form">
+
+        <div class="row gy-3 detailsbox" style="margin:5%">
+
+          <div class="col-md-12">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="5" placeholder="Write your wishes..."
+              required></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <button type="submit">Send Wishes</button>
+          </div>
+
+        </div>
+
+      </form>
+
+      <!-- End wish Form -->
+
+      </div>
+
+      <!-- LIST PESAN -->
+      <div class="messages-section" style="padding: 35px">
+        <h4 class="messages-title">Wishes</h4>
+        <div id="messages-container"></div>
+      </div>
+
+    </section><!-- /wish Section -->
