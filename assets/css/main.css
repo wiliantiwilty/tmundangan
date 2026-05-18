@@ -2306,13 +2306,13 @@ textarea::placeholder {
 
 .open-btn {
     display: inline-block;
-    padding: 16px 60px;
+    padding: 12px 30px;
     border: 1.5px solid #d4af37;
     border-radius: 50px;
     background: rgba(212, 175, 55, 0.08);
     backdrop-filter: blur(8px);
     color: #f5d46b;
-    font-size: 22px;
+    font-size: 18x;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
