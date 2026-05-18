@@ -142,6 +142,7 @@ h6 {
 .title-class{
   text-align: center;
   font-size: clamp(10px, 2vw, 26px);
+  color: #F8F9FB;
 }
 
 
@@ -1255,7 +1256,7 @@ button:hover {
   display: inline-block;
   margin-top: 10px;
   font-size: 14px;
-  color: #9CA3AF;
+  color: #F8F9FB;
   text-decoration: none;
 }
 
@@ -2278,13 +2279,6 @@ textarea::placeholder {
         rgba(5,10,20,0.98)
       ) !important;
   }
-
-  .details .detail-item .title {
-  color: #F5D77A !important;
-}
-
-.details .detail-item:hover .title {
-  color: #D4AF37 !important;
 }
   
 }
