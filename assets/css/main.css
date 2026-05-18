@@ -2274,6 +2274,16 @@ textarea::placeholder {
     margin-bottom: 30px;
   }
 
+  .title-class{
+  text-align: center;
+  font-size: clamp(10px, 2vw, 26px);
+  color: #F8F9FB;
+}
+
+  .title{
+     color: #F8F9FB;
+  }
+
   .navmenu ul {
     background:
       linear-gradient(
