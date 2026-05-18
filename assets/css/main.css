@@ -2278,4 +2278,13 @@ textarea::placeholder {
         rgba(5,10,20,0.98)
       ) !important;
   }
+
+  .details .detail-item .title {
+  color: #F5D77A !important;
+}
+
+.details .detail-item:hover .title {
+  color: #D4AF37 !important;
+}
+  
 }
