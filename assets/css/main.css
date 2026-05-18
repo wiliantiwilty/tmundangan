@@ -1152,7 +1152,7 @@ button:hover {
 .details .detail-item .readmore {
   display: flex;
   align-items: center;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--heading-color), transparent 50%);
   transition: 0.3s;
   font-weight: 700;
   font-size: 14px;
