@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -23,7 +23,7 @@
   /* Background color for the entire website, including individual sections */
   --default-color: #0B1F3A;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color:  #0B1F3A;
+  --heading-color:  #D4AF37;
   /* Color for headings, subheadings and title throughout the website */
   --accent-color: #D4AF37;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
