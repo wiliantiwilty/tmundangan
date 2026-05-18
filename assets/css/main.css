@@ -2287,6 +2287,11 @@ textarea::placeholder {
      color: #F8F9FB;
   }
 
+  .detailsbox {
+    width: 90%;
+    margin: 5%;
+  }
+
   .navmenu ul {
     background:
       linear-gradient(
