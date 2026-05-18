@@ -2251,6 +2251,11 @@ textarea::placeholder {
   border-radius: 50%;
 }
 
+.detailsbox {
+    width: 90%;
+    
+  }
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -2287,10 +2292,7 @@ textarea::placeholder {
      color: #F8F9FB;
   }
 
-  .detailsbox {
-    width: 90%;
-    margin: 5%;
-  }
+  
 
   .navmenu ul {
     background:
