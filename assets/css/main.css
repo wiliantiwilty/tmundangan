@@ -1676,7 +1676,7 @@ button:hover {
 .detail-details .detail-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid color-mix(in srgb, var(-constrant-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
