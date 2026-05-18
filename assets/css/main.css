@@ -2280,7 +2280,9 @@ textarea::placeholder {
   .profile-img {
     margin-bottom: 30px;
     width: 80%;
-    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
   }
 
   .title-class{
